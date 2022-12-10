@@ -17,7 +17,7 @@ const Home: FC = () => {
           </IonToolbar>
         </IonHeader>
 
-        <div className="ion-padding">
+        <div className="p-4">
           <h1>Animal Facts</h1>
 
           <h2>Rhinoceros</h2>
