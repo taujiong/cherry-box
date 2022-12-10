@@ -3,7 +3,7 @@ import type { FC } from 'react'
 import type { ToolMeta } from '../data'
 
 export const ToolCard: FC<ToolMeta> = ({ url, name, category, description }) => (
-  <IonCard href={url}>
+  <IonCard routerLink={url}>
     <IonCardHeader>
       <IonCardTitle>{name}</IonCardTitle>
       <IonCardSubtitle>{category}</IonCardSubtitle>
