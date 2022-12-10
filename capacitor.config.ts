@@ -1,10 +1,17 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from '@capacitor/cli'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'cherry-box',
-  webDir: 'build',
-  bundledWebRuntime: false
-};
+  appId: 'com.taujiong.cherrybox',
+  appName: '樱桃工具箱',
+  webDir: 'dist',
+  bundledWebRuntime: false,
+  server: {
+    url: process.env.DEV_URL,
+    cleartext: Boolean(process.env.DEV_URL),
+  },
+}
 
-export default config;
+export default config
