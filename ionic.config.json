@@ -1,0 +1,7 @@
+{
+  "name": "cherry-box",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
