@@ -15,7 +15,9 @@ export const Home: FC = () => {
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">樱桃工具箱</IonTitle>
+            <IonTitle className="leading-10" size="large">
+              樱桃工具箱
+            </IonTitle>
           </IonToolbar>
         </IonHeader>
 
