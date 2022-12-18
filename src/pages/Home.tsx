@@ -3,7 +3,7 @@ import type { FC } from 'react'
 import { ToolCard } from '../components/ToolCard'
 import { tools } from '../tools'
 
-export const Home: FC = () => {
+export const HomePage: FC = () => {
   return (
     <IonPage>
       <IonHeader>

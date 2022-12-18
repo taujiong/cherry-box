@@ -16,6 +16,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.46.0
   '@vitejs/plugin-react': ^3.0.0
   autoprefixer: ^10.4.13
+  date-fns: ^2.29.3
   dotenv: ^16.0.3
   eslint: ^8.29.0
   eslint-config-alloy: ^4.7.0
@@ -39,6 +40,7 @@ dependencies:
   '@capacitor/ios': 4.6.1_@capacitor+core@4.6.1
   '@ionic/react': 6.4.0_biqbaboplfbrettd7655fr4n2y
   '@ionic/react-router': 6.4.0_lrmp3soklbeidbetlzp5p4lxwi
+  date-fns: 2.29.3
   ionicons: 6.0.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -2561,6 +2563,14 @@ packages:
       }
     engines: { node: '>=8' }
     dev: true
+
+  /date-fns/2.29.3:
+    resolution:
+      {
+        integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==,
+      }
+    engines: { node: '>=0.11' }
+    dev: false
 
   /dateformat/3.0.3:
     resolution:
