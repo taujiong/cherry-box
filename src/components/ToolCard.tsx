@@ -1,8 +1,14 @@
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react'
 import type { FC } from 'react'
-import type { ToolMeta } from '../data'
 
-export const ToolCard: FC<ToolMeta> = ({ url, name, category, description }) => (
+interface ToolCardProps {
+  url: string
+  name: string
+  category: string
+  description: string
+}
+
+export const ToolCard: FC<ToolCardProps> = ({ url, name, category, description }) => (
   <IonCard routerLink={url}>
     <IonCardHeader>
       <IonCardTitle>{name}</IonCardTitle>

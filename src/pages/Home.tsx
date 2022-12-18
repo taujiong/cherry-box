@@ -21,8 +21,8 @@ export const HomePage: FC = () => {
           </IonToolbar>
         </IonHeader>
 
-        {tools.map((meta) => (
-          <ToolCard key={meta.name + Math.random()} {...meta} />
+        {tools.map(({ id, ...restMeta }) => (
+          <ToolCard key={id} url={id} {...restMeta} />
         ))}
       </IonContent>
     </IonPage>
