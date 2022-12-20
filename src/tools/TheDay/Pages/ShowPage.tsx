@@ -1,13 +1,16 @@
 import {
   IonBackButton,
+  IonButton,
   IonButtons,
   IonContent,
   IonHeader,
+  IonIcon,
   IonList,
   IonPage,
   IonTitle,
   IonToolbar,
 } from '@ionic/react'
+import { add } from 'ionicons/icons'
 import { useEffect, useState } from 'react'
 import { DayItem } from '../components/DayItem'
 import { PinnedDay } from '../components/PinnedDay'
@@ -25,10 +28,15 @@ export const ShowPage = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButtons>
+          <IonButtons slot="start">
             <IonBackButton />
           </IonButtons>
           <IonTitle>倒数日</IonTitle>
+          <IonButtons slot="end">
+            <IonButton routerLink="/tools/the-day/add">
+              <IonIcon icon={add} />
+            </IonButton>
+          </IonButtons>
         </IonToolbar>
       </IonHeader>
 

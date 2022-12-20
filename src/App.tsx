@@ -7,6 +7,7 @@ import { routes as toolRoutes } from './tools'
 
 setupIonicReact({
   mode: 'ios',
+  backButtonText: '返回',
 })
 
 export const App: FC = () => (

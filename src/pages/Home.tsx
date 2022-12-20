@@ -12,15 +12,7 @@ export const HomePage: FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle className="leading-10" size="large">
-              樱桃工具箱
-            </IonTitle>
-          </IonToolbar>
-        </IonHeader>
-
+      <IonContent>
         {tools.map(({ id, ...restMeta }) => (
           <ToolCard key={id} url={id} {...restMeta} />
         ))}

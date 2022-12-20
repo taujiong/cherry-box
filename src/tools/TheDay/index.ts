@@ -1,4 +1,5 @@
 import type { ToolMeta, ToolRoute } from '../../models'
+import { AddPage } from './Pages/AddPage'
 import { ShowPage } from './Pages/ShowPage'
 
 const THE_DAY_ID = 'the-day'
@@ -14,5 +15,9 @@ export const routes: ToolRoute[] = [
   {
     path: THE_DAY_ID,
     component: ShowPage,
+  },
+  {
+    path: THE_DAY_ID + '/add',
+    component: AddPage,
   },
 ]
